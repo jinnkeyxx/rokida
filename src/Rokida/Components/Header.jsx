@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Layout.less'
 import '../css/Responesive.css'
@@ -10,9 +10,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch , faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Navbar , Container , Row , Col , InputGroup , FormControl , Nav } from 'react-bootstrap'
 const Header = () => {
+    const [numberShop , setNumberShop] = useState(0)
+    const [ValueSerach , setValueSerach] = useState("")
+    const changeValueSearch = (e) => {
+        setValueSerach(e.target.value)
+    }
+    const Search = () => {
+        if(!ValueSerach) return
+        console.log(ValueSerach)
+    }
     return(
         <header>
-         
             <div className="logo w-100 text-center">
                 <img src={logo} alt="" id="logo"/>
             </div>
@@ -71,21 +79,21 @@ const Header = () => {
                         <Row className="w-60 align-content-center ml-auto mr-auto">
                             <Col md={10} className=" ml-md-5 px-0">
                                 <InputGroup  className="py-2">
-                                    <FormControl type="text" className="form-control" placeholder="" aria-label="" aria-describedby="search_product"/>
-                                    <InputGroup.Append >
+                                    <FormControl type="text" value={ValueSerach} onChange={changeValueSearch} className="form-control" placeholder="" aria-label="" aria-describedby="search_product"/>
+                                    <InputGroup.Append onClick={Search}>
                                         <InputGroup.Text id="search_product"><FontAwesomeIcon icon={faSearch} /></InputGroup.Text>
                                     </InputGroup.Append>
                                 </InputGroup>
                             </Col>
                             <Col className="px-0 text-center py-2">
                                 <a href="/" className="nav-link position-relative "><FontAwesomeIcon icon={faShoppingCart} />
-                                    <b className="position-absolute number d-block">5</b>
+                                    <b className="position-absolute number d-block">{numberShop}</b>
                                 </a>
                             </Col>
                         </Row>
                     </Container>
                     <Container className="header__product justify-content-center text-center">
-                        <Nav className=" mr-auto ml-auto">
+                        <Nav className="mr-auto ml-auto">
                             <Nav.Item  className=" ">
                                 <Nav.Link  href="/#">Ban Hnag cung Rokida </Nav.Link>
                             </Nav.Item>

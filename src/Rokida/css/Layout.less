@@ -59,8 +59,6 @@ header {
                 padding : 5px;
             }
         }
-        
-
     }
     .header__form {
             a.nav-link{
@@ -87,6 +85,11 @@ header {
             input {
                 border: 1px solid #fff;
                 background-color: #fff;
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                    border-color : #fff !important;
+                }
             }
             span.input-group-text {
                 background-color: #fff;
