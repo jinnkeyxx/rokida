@@ -115,3 +115,47 @@ header {
         }
     }
 }
+main {
+    background-color: #f1f2f2;
+    .list-group {
+        .list-group-item {
+            padding : 0.5rem 1.25rem;
+            border : none;
+            background-color: #f1f2f2;
+            a.nav-link {
+                padding : 0;
+                color : #000;
+                font-weight: 600;
+                font-size: 0.9em;
+            }
+        }    
+    }
+    .carousel {
+        height: 100%;
+        .carousel-inner {
+            height: 100%;
+            .carousel-item {
+                height: 100%;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .carousel-indicators{
+            li {
+                width : 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #ccc;
+                
+            }
+            .active {
+                background-color: @red;
+            }
+        }
+    }
+    .banner {
+        border-top: 1px solid @red;
+    }
+
+}

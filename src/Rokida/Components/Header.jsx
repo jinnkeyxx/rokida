@@ -30,7 +30,7 @@ const Header = () => {
                     <Container className="header__info text-center">
                         <Nav className="mr-auto">
                             <Nav.Item className=" active">
-                                <Nav.Link  href="/#">Home </Nav.Link>
+                                <Nav.Link  href="/#">Tai ung dung </Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Nav className="ml-auto">
