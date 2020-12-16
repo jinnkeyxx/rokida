@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@red : #d21719;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: @red;
+    padding: 1rem;
+    .header__info{
+        div.navbar-nav {
+            div.nav-item {
+                padding : 1rem 0;
+                a.nav-link {
+                   color : #fff !important;
+                   opacity: 0.9;
+                   font-weight: 600;
+       
+                   &:hover {
+                       opacity: 1;
+                       transform: scale(1.1);
+                   }
+                   #img__user{
+                       transform: translateY(-10px);
+                   }
+               }
+            }
+        }
+    }
+    .navbar-toggler {
+        background-color: #fff;
+        color : #000;
+        
+    }
+    .header__help {
+        div.navbar-nav{
+            div.nav-item{
+                padding : 1rem;
+                a.nav-link {
+                    color : #fff !important;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .flag {
+            background-color: #fff;
+            border-radius: 5px;
+            margin : auto;
+            
+            a {
+                padding : 5px;
+            }
+        }
+        
+
+    }
+    .header__form {
+            a.nav-link{
+                color : #fff !important;
+                padding: 0;
+                font-size: 1.5em;
+                display: inline-block;
+            }
+            .w-60 {
+                width: 60% !important;
+            }
+            b.number {
+                top : 0;
+                right: -5px;
+                color : red;
+                background-color: #fff;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                font-size: 0.5em;
+
+            }
+            input {
+                border: 1px solid #fff;
+                background-color: #fff;
+            }
+            span.input-group-text {
+                background-color: #fff;
+                color : @red;
+                border: 1px solid #fff;
+            }
+    }
+    .header__product {
+        div.navbar-nav {
+            div.nav-item {
+                padding : 1rem 0;
+                a.nav-link {
+                   color : #fff !important;
+                   font-size: 0.9em;
+                   opacity: 0.9;
+                   font-weight: 600;
+                   &:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                   }
+               }
+            }
+        }
+    }
+}

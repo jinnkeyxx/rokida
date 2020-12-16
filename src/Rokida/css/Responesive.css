@@ -1,0 +1,14 @@
+@media (max-width: 990px) {
+    .header__info {
+        display: block !important;
+    }
+    .character {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: block !important;
+    }
+}
