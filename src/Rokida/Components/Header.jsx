@@ -30,42 +30,45 @@ const Header = () => {
                     <Container className="header__info text-center">
                         <Nav className="mr-auto">
                             <Nav.Item className=" active">
-                                <Nav.Link  href="/#">Tai ung dung </Nav.Link>
+                                <Nav.Link  href="/#">Tải ứng dụng</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Nav className="ml-auto">
                             <Nav.Item  className=" active">
-                                <Nav.Link  href="/#">Home</Nav.Link>
+                                <Nav.Link  href="/#">Thông báo</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" character">
                                 <Nav.Link  href="/#">|</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Home</Nav.Link>
+                                <Nav.Link  href="/#">Trợ giúp</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  >
                                 <Nav.Link  href="/#" >
                                     <img src={user} className="img-fluid rounded-circle" id="img__user" alt=""/>
                                 </Nav.Link>
                             </Nav.Item>
+                            <Nav.Item  className=" ">
+                                <Nav.Link  href="/#">Xuxu2_2</Nav.Link>
+                            </Nav.Item>
                         </Nav>
                     </Container>
                     <Container className="header__help justify-content-center text-center">
                         <Nav className="mr-auto ml-auto">
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Ban Hnag cung Rokida </Nav.Link>
+                                <Nav.Link  href="/#">Bán hàng cùng Rokida</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">tro giup </Nav.Link>
+                                <Nav.Link  href="/#">Trợ giúp</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className=" ">
-                                <Nav.Link  href="/#">Kiem tra don hang </Nav.Link>
+                                <Nav.Link  href="/#">Kiểm tra đơn hàng</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Dang Nhap </Nav.Link>
+                                <Nav.Link  href="/#">Đăng nhập</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Dang ki </Nav.Link>
+                                <Nav.Link  href="/#">Đăng ký</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className="text-center ">
                             <div className="flag ">
@@ -95,19 +98,19 @@ const Header = () => {
                     <Container className="header__product justify-content-center text-center">
                         <Nav className="mr-auto ml-auto">
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Ban Hnag cung Rokida </Nav.Link>
+                                <Nav.Link  href="/#">Nấu ăn</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">tro giup </Nav.Link>
+                                <Nav.Link  href="/#">Thiết bị nhà tắm</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Kiem tra don hang </Nav.Link>
+                                <Nav.Link  href="/#">Thời trang nam</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Dang Nhap </Nav.Link>
+                                <Nav.Link  href="/#">Túi xách</Nav.Link>
                             </Nav.Item>
                             <Nav.Item  className=" ">
-                                <Nav.Link  href="/#">Dang ki </Nav.Link>
+                                <Nav.Link  href="/#">Váy đầm</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Container>
