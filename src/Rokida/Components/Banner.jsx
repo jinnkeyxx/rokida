@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Img_Banner, Img_Banner_home1, Img_Banner_home2, Img_Banner_sefl, Img_QC_Icon1, Img_QC_Icon2, Img_QC_Icon3, Img_QC_Icon4, Img_QC_Icon5, Img_QC_Icon6 } from '../DataFake/Banner'
+import { Img_Banner, Img_Banner_home1, Img_Banner_home2, Img_Banner_sefl } from '../DataFake/Banner'
 import { ListProduct } from '../DataFake/ListProduct'
 import { Container, Row, Col, Nav, Navbar, ListGroup, Carousel } from 'react-bootstrap'
 import Loading from '../Other/Loading'
@@ -9,12 +9,6 @@ const Banner = () => {
     const [bannerSefl, setBannerSelf] = useState([])
     const [bannerHome1, setBannerHome1] = useState([])
     const [bannerHome2, setBannerHome2] = useState([])
-    const [qcIcon1, setQCIcon1] = useState([])
-    const [qcIcon2, setQCIcon2] = useState([])
-    const [qcIcon3, setQCIcon3] = useState([])
-    const [qcIcon4, setQCIcon4] = useState([])
-    const [qcIcon5, setQCIcon5] = useState([])
-    const [qcIcon6, setQCIcon6] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
         const loadItem = async () => {
@@ -24,12 +18,6 @@ const Banner = () => {
             await setBannerSelf(Img_Banner_sefl)
             await setBannerHome1(Img_Banner_home1)
             await setBannerHome2(Img_Banner_home2)
-            await setQCIcon1(Img_QC_Icon1)
-            await setQCIcon2(Img_QC_Icon2)
-            await setQCIcon3(Img_QC_Icon3)
-            await setQCIcon4(Img_QC_Icon4)
-            await setQCIcon5(Img_QC_Icon5)
-            await setQCIcon6(Img_QC_Icon6)
         }
         loadItem()
     }, []);
@@ -39,22 +27,23 @@ const Banner = () => {
             <div className="my-2">
                 <Container fluid>
                     <Row>
-                        <Col md={12} lg={2}>
+                        <Col >
                             <Navbar navbar="light" expand="lg">
                                 <Navbar.Toggle aria-controls="rokida__product" className="ml-auto mr-auto" />
-                                <Navbar.Collapse className="py-2 " id="rokida__product">
-                                    <Nav>
+                                <Navbar.Collapse className="" id="rokida__product">
+                                    <Nav className="nav__right">
                                         <ListGroup className="list-group bg-light ">
+                                        <ListGroup.Item style={{textTransform : 'uppercase' , fontWeight : 'bold'}}>Danh muc san pham</ListGroup.Item>
                                             {productList.map((item, index) => (
-                                                <ListGroup.Item key={index}><Nav.Link href={item.href}>{item.name}</Nav.Link></ListGroup.Item>
+                                                <ListGroup.Item className="" key={index}><Nav.Link href={item.href}>{item.name}</Nav.Link></ListGroup.Item>
                                             ))}
                                         </ListGroup>
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>
                         </Col>
-                        <Col md={12} lg={7}>
-                            <Carousel className="banner position-relative h-100 py-3 ">
+                        <Col md={12} lg={5} xl={6} style={{borderTop : '1px solid red'}}>
+                            <Carousel className="banner position-relative h-100  ">
                                 {banner.map((item, index) => (
                                     <Carousel.Item className="carousel-item active" key={index}>
                                         <img className="d-block w-100" src={item.src} alt="First slide" />
@@ -62,9 +51,9 @@ const Banner = () => {
                                 ))}
                             </Carousel>
                         </Col>
-                        <Col >
+                        <Col md={12} lg={3} xl={3} className="h-100 img_self">
                             {bannerSefl.map((item, index) => (
-                                <img src={item.src} className="img-fluid pt-3 w-100 d-lg-block" alt="" key={index} />
+                                <img src={item.src} className="img-fluid  pt-xl-0 w-100 d-lg-block d-xl-block" alt="" key={index} />
                             ))}
                         </Col>
                     </Row>
@@ -73,7 +62,7 @@ const Banner = () => {
             <div className="my-2">
                 <Container fluid>
                     <Row>
-                        <Col md={12} lg={6}>
+                        <Col md={12} lg={7} xl={6}>
                             
                                 {bannerHome1.map((item, index) => (
                                     <img src={item.src} className="img-fluid pt-3 w-100 d-lg-block" alt="" key={index} />
@@ -87,51 +76,6 @@ const Banner = () => {
                         </Col>
                     </Row>
                 </Container>
-            </div>
-            <div className="header__help justify-content-center text-center container">
-                <Container fluid>
-                    <Row >
-                        <Col md={12} lg={2} >
-                                {qcIcon1.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Siêu khuyến mãi
-                        </Col>
-                        <Col >
-                                {qcIcon2.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Fresship
-                        </Col>
-                        <Col >
-                                {qcIcon3.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Giờ vàng
-                        </Col>
-                        <Col >
-                                {qcIcon4.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Trả hàng hoàn tiền
-                        </Col>
-                        <Col >
-                                {qcIcon5.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Hàng quốc tế
-                        </Col>
-                        <Col >
-                                {qcIcon6.map((item, index) => (
-                                    <img src={item.src} className="img-fluid d-lg-block" alt="" key={index} />
-                                ))}
-                                Siêu thị điện tử
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className="my-2">
-                <div className="sologan">THÁNG  VÀNG KHUYẾN MÃI SIÊU SALE 70%</div>
             </div>
         </main>
     )

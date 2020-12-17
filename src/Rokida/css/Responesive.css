@@ -5,10 +5,41 @@
     .character {
         display: none;
     }
+    .nav__right{
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: block !important;
+    }
+    
+    main .img_self img {
+        padding-top : 1.4rem;
+    }
+}
+@media (min-width: 1000px){
+    main .list-group .list-group-item {
+        padding: 0.3rem 1.25rem;
+    }
+    main .img_self img {
+        padding-top : 2.5rem;
+    }
+}
+@media (min-width: 1300px){
+    main .list-group .list-group-item {
+        padding: 0.3rem 1.25rem;
+    }
+    main .img_self img {
+        padding-top : 1.5rem;
+    }
+}
+@media (min-width: 1500px){
+    main .list-group .list-group-item {
+        padding: 0.4rem 1.25rem;
+    }
+    main .img_self img {
+        padding-top : 0rem;
     }
 }
