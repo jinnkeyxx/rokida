@@ -130,7 +130,9 @@ const Banner = () => {
                     </Row>
                 </Container>
             </div>
-
+            <div className="my-2">
+                <div className="sologan">THÁNG  VÀNG KHUYẾN MÃI SIÊU SALE 70%</div>
+            </div>
         </main>
     )
 }
