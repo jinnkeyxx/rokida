@@ -20,7 +20,10 @@ export const Img_Banner_sefl = [
     { id : Math.random()* 9999,  src : img_Banner1 },
     { id : Math.random()* 9999,  src : img_Banner1 },
     { id : Math.random()* 9999,  src : img_Banner1 },
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 ]
 
 export const Img_Banner_home1 = [
