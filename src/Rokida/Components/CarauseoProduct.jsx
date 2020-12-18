@@ -1,10 +1,19 @@
-import React from 'react'
+import React  , { useState , useEffect } from 'react'
 import { Container, Row, Col , Card } from 'react-bootstrap'
 import Slider from "react-slick";
 import { data } from '../DataFake/Sale'
 import img_sale from '../images/icon-sale.png'
 import img_ship from '../images/icon-ship2.jpg'
 const CarauseoProduct = () => { 
+    const [dataSale , setSale] = useState([])
+  
+    useEffect(() => {
+        const loadItem = async () => {
+            const sale = data
+            await setSale(sale)
+        }
+        loadItem()
+    },[])
     const settings = {
         autoplay : true,
         lazyLoad: true,
@@ -39,11 +48,13 @@ const CarauseoProduct = () => {
             }
         ]
     };
+    
     return(
         <Container className="my-2">
             <div>
                 <Slider {...settings}>
-                    {data.map((item, index)=> (
+                    
+                    {dataSale.map((item, index)=> (
                         <div key={index} className="position-relative">
                             <Card className="card__item position-static">
                                 <img src={img_sale} alt="" className="d-block sale position-absolute" style={{top : '-10px' , right : '-10px'}} />
