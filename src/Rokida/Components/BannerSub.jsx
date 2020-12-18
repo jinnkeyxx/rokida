@@ -14,7 +14,7 @@ const BannerSub = () => {
             <Row>
                 <Col className="text-center">
                     <img src={img_Icon1} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Sieu khuyen mai</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Siêu khuyến mãi</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Icon2} alt=""/>
@@ -22,24 +22,24 @@ const BannerSub = () => {
                 </Col>
                 <Col className="text-center">
                     <img src={img_Icon3} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Gio vang</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Giờ vàng</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Icon4} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Tra Hang Hoan tien</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Trả hàng hoàn tiền</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Icon5} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Hang Quoc te</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Hàng Quốc Tế</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Icon6} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Sach dien tu</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Sách điện tử</h6>
                 </Col>
             </Row>
         </Container>
         <div className="my-2">
-            <h3 className="sologan">THÁNG  VÀNG KHUYẾN MÃI SIÊU SALE 70%</h3>
+            <h3 className="sologan">THÁNG VÀNG KHUYẾN MÃI SIÊU SALE 70%</h3>
         </div>
         </>
     )

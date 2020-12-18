@@ -14,13 +14,13 @@ const SaleItem = () => {
     return(
         <article>
             <Container className="my-3">
-                <h3 style={{fontWeight : 'bold' , textTransform : 'uppercase'}}>sale chop nhoang</h3>
+                <h3 style={{fontWeight : 'bold' , textTransform : 'uppercase'}}>sale chớp nhoáng</h3>
                 <Row className="px-0 mx-0">
                     <Col lg={2} md={4} className='px-0'>
-                        <p>Dang ban</p>
+                        <p>Đang bán</p>
                     </Col>
                     <Col  className='px-0'>
-                        <p>tiep tuc trong  &nbsp;
+                        <p>Tiếp tục trong &nbsp;
                             <b className="time">{hours}</b> : &nbsp;
                             <b className="time">{minutes}</b> :&nbsp;
                             <b className="time">{seconds}</b> &nbsp;
