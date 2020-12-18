@@ -1,21 +1,27 @@
 export const TimeSale = 'December 30, 2020 20:00:00'
 let interval
-export const StartTime = (h , m , s ) => {
-    const countDownDate = new Date(TimeSale).getTime()
+export const StartTime = (h , m , s , d , timeSale) => {
+    const countDownDate = new Date(timeSale).getTime();
     interval = setInterval(() => {
-        const now = new Date().getTime()
+        let now = new Date().getTime()
+        
         const distance = countDownDate - now
-        // const days = Math.floor(distance / (1000 * 60 * 60 * 24))
-        const Hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
-        const minutes = Math.floor((distance % ( 1000 * 60 * 60)) / (1000 * 60))
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+        let Hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+        let minutes = Math.floor((distance % ( 1000 * 60 * 60)) / (1000 * 60))
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000)
         if(distance < 0 ){
             clearInterval(interval.current)
         }
         else {
-            h(Hours)
-            m(minutes)
-            s(seconds)
+            if (days < 10) {days = `0${days}`}
+            if (Hours   < 10) {Hours   = `0${Hours}`}
+            if (minutes < 10) {minutes = `0${minutes}`}
+            if (seconds < 10) {seconds = `0${seconds}`}
+            d(`${days}d`)
+            h(`${Hours}h`)
+            m(`${minutes}m`)
+            s(`${seconds}s`)
         }
     },1000)
 }

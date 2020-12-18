@@ -5,6 +5,7 @@ import {
     Route,
   } from "react-router-dom";
   import Loading from './Other/Loading'
+
 const Home = lazy (() => import('./Pages/Home'))
 const App = () => {
     return(
