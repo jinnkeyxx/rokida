@@ -16,15 +16,22 @@ const SaleItem = () => {
     return(
         <article>
             <Container className="my-3">
-                <h3 style={{fontWeight : 'bold' , textTransform : 'uppercase'}}>sale chop nhoang</h3>
+                <h3 style={{fontWeight : 'bold' , textTransform : 'uppercase'}}>sale chớp nhoáng</h3>
                 <Row className="px-0 mx-0">
                     <Col lg={2} md={4} className='px-0'>
+<<<<<<< HEAD
                         <p><b>Dang ban</b></p>
                     </Col>
                     <Col  className='px-0'>
                         <p>
                             <b>Tiep tuc trong</b>  &nbsp;
                             <b className="time">{day}</b> : &nbsp;
+=======
+                        <p>Đang bán</p>
+                    </Col>
+                    <Col  className='px-0'>
+                        <p>Tiếp tục trong &nbsp;
+>>>>>>> 91a598268ce996971eadefe451adb3e793a5a4a5
                             <b className="time">{hours}</b> : &nbsp;
                             <b className="time">{minutes}</b> :&nbsp;
                             <b className="time">{seconds}</b> &nbsp;
