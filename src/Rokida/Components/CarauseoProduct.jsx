@@ -1,15 +1,17 @@
 import React  , { useState , useEffect } from 'react'
 import { Container, Row, Col , Card } from 'react-bootstrap'
 import Slider from "react-slick";
-import { data } from '../DataFake/Sale'
+import { data  , PaginationData} from '../DataFake/Sale'
 import img_sale from '../images/icon-sale.png'
 import img_ship from '../images/icon-ship2.jpg'
 const CarauseoProduct = () => { 
     const [dataSale , setSale] = useState([])
-  
+    const [limitItem , setLimitItem] = useState(0)
     useEffect(() => {
         const loadItem = async () => {
             const sale = data
+            const limit = PaginationData(data).length
+            await setLimitItem(limit)
             await setSale(sale)
         }
         loadItem()
@@ -19,7 +21,7 @@ const CarauseoProduct = () => {
         lazyLoad: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: limitItem,
         slidesToScroll: 1,
         responsive: [
             {   
@@ -67,10 +69,10 @@ const CarauseoProduct = () => {
                                         {item.text}
                                         <Row className="my-2 mx-2 text-center h-100">
                                             <div className="price ">
-                                                <b className="text-white mb-0 d-block">850.000đ</b>
+                                                <b className="text-white mb-0 d-block">{`${item.price.toFixed(3)}đ`}</b>
                                             </div>
                                             <div className="price__old align-text-bottom d-flex">
-                                                <b className="text-white mb-0 mt-2 mx-2 d-block">850.000đ</b>
+                                                <b className="text-white mb-0 mt-2 mx-2 d-block">{`${item.price__old.toFixed(3)}đ`}</b>
                                             </div>
                                         </Row>
                                     </div>
