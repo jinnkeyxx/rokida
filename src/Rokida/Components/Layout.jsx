@@ -4,6 +4,8 @@ import Banner from './Banner'
 import BannerSub from './BannerSub'
 import SaleItem from './SaleItem'
 import CarauseoProduct from './CarauseoProduct'
+import HotItem from './HotItem'
+import SuperSale from './SuperSale'
 import '../css/Layout.less'
 import '../css/Responesive.css'
 import "slick-carousel/slick/slick.css";
@@ -16,6 +18,8 @@ const Layout = () => {
             <BannerSub/>
             <SaleItem/>
             <CarauseoProduct/>
+            <HotItem/>
+            <SuperSale/>
         </>
     )
 }

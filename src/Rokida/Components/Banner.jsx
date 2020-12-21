@@ -33,7 +33,7 @@ const Banner = () => {
                                 <Navbar.Collapse className="" id="rokida__product">
                                     <Nav className="nav__right">
                                         <ListGroup className="list-group bg-light ">
-                                        <ListGroup.Item style={{textTransform : 'uppercase' , fontWeight : 'bold'}}>Danh mục sản phẩm</ListGroup.Item>
+                                        <ListGroup.Item style={{textTransform : 'uppercase' , fontWeight : 'bold'}}>Danh mục hàng</ListGroup.Item>
                                             {productList.map((item, index) => (
                                                 <ListGroup.Item className="" key={index}><Nav.Link href={item.href}>{item.name}</Nav.Link></ListGroup.Item>
                                             ))}

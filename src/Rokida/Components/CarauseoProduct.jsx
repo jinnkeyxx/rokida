@@ -2,7 +2,7 @@ import React  , { useState , useEffect } from 'react'
 import { Container, Row, Col , Card } from 'react-bootstrap'
 import Slider from "react-slick";
 import { data  , PaginationData} from '../DataFake/Sale'
-import img_sale from '../images/icon-sale.png'
+import img_sale from '../images/sale.png'
 import img_ship from '../images/icon-ship2.png'
 const CarauseoProduct = () => { 
     const [dataSale , setSale] = useState([])
