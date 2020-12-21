@@ -33,7 +33,7 @@ const Banner = () => {
                                 <Navbar.Collapse className="" id="rokida__product">
                                     <Nav className="nav__right">
                                         <ListGroup className="list-group bg-light ">
-                                        <ListGroup.Item style={{textTransform : 'uppercase' , fontWeight : 'bold'}}>Danh muc san pham</ListGroup.Item>
+                                        <ListGroup.Item style={{textTransform : 'uppercase' , fontWeight : 'bold'}}>Danh mục sản phẩm</ListGroup.Item>
                                             {productList.map((item, index) => (
                                                 <ListGroup.Item className="" key={index}><Nav.Link href={item.href}>{item.name}</Nav.Link></ListGroup.Item>
                                             ))}
@@ -53,7 +53,7 @@ const Banner = () => {
                         </Col>
                         <Col md={12} lg={3} xl={3} className="h-100 img_self">
                             {bannerSefl.map((item, index) => (
-                                <img src={item.src} className="img-fluid  pt-xl-0 w-100 d-lg-block d-xl-block" alt="" key={index} />
+                                <img src={item.src} className="img-fluid  pt-xl-0 w-100 d-lg-block d-xl-block mb-3" alt="" key={index} />
                             ))}
                         </Col>
                     </Row>
