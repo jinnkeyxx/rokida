@@ -42,7 +42,7 @@ const Banner = () => {
                                 </Navbar.Collapse>
                             </Navbar>
                         </Col>
-                        <Col md={12} lg={5} xl={6} style={{borderTop : '1px solid red'}}>
+                        <Col md={12} lg={5} xl={6} style={{borderTop : '1px solid none'}}>
                             <Carousel className="banner position-relative h-100  ">
                                 {banner.map((item, index) => (
                                     <Carousel.Item className="carousel-item active" key={index}>

@@ -69,31 +69,31 @@ const HotItem = () => {
             <Row>
                 <Col className="text-center">
                     <img src={img_Item11} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Thiết bị điện tử</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Nhà sách online</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item12} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Phụ kiện điện tử</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Trang sức phong thuỷ</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item13} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Thiết bị gia dụng</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Túi xách - ví</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item14} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Sức khoẻ và làm đẹp</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Cây cảnh - hạt giống</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item15} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Mẹ và bé</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Bách hoá online</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item15} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Thời trang Nam</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Bách hoá online</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Item16} alt=""/>
-                    <h6 style={{fontWeight : 'bold'}}>Thời trang Nữ</h6>
+                    <h6 style={{fontWeight : 'bold'}}>Voucher và dịch vụ</h6>
                 </Col>
                 <Col className="text-center">
                     <img src={banner_foodsale} alt=""/>
