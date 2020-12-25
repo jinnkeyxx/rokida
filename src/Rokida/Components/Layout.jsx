@@ -8,6 +8,7 @@ import HotItem from './HotItem'
 import SuperSale from './SuperSale'
 import Suggestion from './Suggestion'
 import Partner from './Partner'
+import RokidaMall from './RokidaMall'
 import '../css/Layout.less'
 import '../css/Responesive.css'
 import "slick-carousel/slick/slick.css";
@@ -22,6 +23,7 @@ const Layout = () => {
             <CarauseoProduct/>
             <HotItem/>
             <SuperSale/>
+            <RokidaMall/>
             <Suggestion/>
             <Partner/>
         </>

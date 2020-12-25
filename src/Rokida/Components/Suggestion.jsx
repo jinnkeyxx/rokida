@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import Slider from "react-slick";
 import poster_Rokida from '../images/poster-rokida-onl.png'
 
 
@@ -12,6 +13,9 @@ const Suggestion = () => {
                 <Row className="my-3">
                     <Col className="text-center">
                         <img src={poster_Rokida} alt="" />
+                    </Col>
+                    <Col>
+                    
                     </Col>
                     
                 </Row>

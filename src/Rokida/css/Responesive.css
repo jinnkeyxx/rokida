@@ -26,6 +26,10 @@
     main .img_self img {
         padding-top : 2.5rem;
     }
+    .hot__item .item {
+        max-width: 10%;
+        flex: 0 0 9.333333%;
+    }
 }
 @media (min-width: 1300px){
     main .list-group .list-group-item {

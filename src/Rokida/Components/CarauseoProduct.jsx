@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { data  , PaginationData} from '../DataFake/Sale'
 import img_sale from '../images/sale.png'
 import img_ship from '../images/icon-ship2.png'
+import Slick from './Slick'
 const CarauseoProduct = () => { 
     const [dataSale , setSale] = useState([])
     const [limitItem , setLimitItem] = useState(0)
@@ -62,9 +63,7 @@ const CarauseoProduct = () => {
     
     return(
         <Container className="my-2">
-            <div>
-                <Slider {...settings}>
-                    
+            <Slick settings={settings}>
                     {dataSale.map((item, index)=> (
                         <div key={index} className="position-relative">
                             <Card className="card__item position-static">
@@ -89,8 +88,7 @@ const CarauseoProduct = () => {
                             </Card>
                         </div>
                     ))}
-                </Slider>
-            </div>
+                </Slick>
         </Container>
     )
 }

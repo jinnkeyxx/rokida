@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 header {
     background-color: @red;
@@ -218,9 +219,58 @@ div.price {
     text-align: center;
     display: table-cell;
     vertical-align: bottom;
-    width: 50%;
+   
     height: 100%;
 }
 img.d-block.sale.position-absolute {
     z-index: 1000;
+}
+.hot__item {
+    .item {
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        &:last-child {
+            border: none;
+            padding: 1rem;
+        }
+        h6 {
+            padding-top : 10px;
+            font-size: 0.7em;
+        }
+    }
+    
+}
+.detail {
+    display: none;
+    color : #fff;
+    font-size: 0.7em;
+}
+.sale__item {
+    transition: all .5s;
+    cursor: pointer;
+    .card__item.card {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem ;
+        margin-top: 0;
+    }
+    &:hover .detail{
+        display: block;
+    }
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+span.character {
+    background-color: #d21719 !important;
+    border-radius: 100%;
+    font-size: 0.8;
+    line-height: 0;
+    display: inline-block;
+    padding: 8px;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
 }

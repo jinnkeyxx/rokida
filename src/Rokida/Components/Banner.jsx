@@ -51,7 +51,7 @@ const Banner = () => {
                                 ))}
                             </Carousel>
                         </Col>
-                        <Col md={12} lg={3} xl={3} className="h-100 img_self">
+                        <Col  className="h-100 img_self">
                             {bannerSefl.map((item, index) => (
                                 <img src={item.src} className="img-fluid  pt-xl-0 w-100 d-lg-block d-xl-block mb-3" alt="" key={index} />
                             ))}
