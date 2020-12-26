@@ -13,22 +13,16 @@ const SuperSale = () => {
             <Container className="mt-5">
             <Row className="my-3">
                 <Col className="text-center">
-                    <img src={img_Partner1} alt=""/>
-                </Col>
-                <Col className="text-center">
-                    <img src={img_Partner2} alt=""/>
+                    <img src={img_Partner3} alt=""/>
                 </Col>
                 <Col className="text-center">
                     <img src={img_Partner3} alt=""/>
                 </Col>
                 <Col className="text-center">
-                    <img src={img_Partner4} alt=""/>
+                    <img src={img_Partner3} alt=""/>
                 </Col>
                 <Col className="text-center">
-                    <img src={img_Partner5} alt=""/>
-                </Col>
-                <Col className="text-center">
-                    <img src={img_Partner6} alt=""/>
+                    <img src={img_Partner3} alt=""/>
                 </Col>
             </Row>
         </Container>
