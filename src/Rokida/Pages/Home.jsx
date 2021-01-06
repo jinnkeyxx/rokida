@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '../Components/Layout'
+import HomePage from '../Components/HomePage'
 import '../css/Layout.less'
 import '../css/Responesive.css'
 const Home = () => {
     return(
-        <Layout/>
+        <HomePage/>
     )
 }
 export default Home

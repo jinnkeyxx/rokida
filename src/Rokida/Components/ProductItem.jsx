@@ -1,10 +1,10 @@
-import React , { useState , useEffect }from "react";
+import React , { useState , useEffect } from "react";
 import Slider from "react-slick";
 import {Card , Row , Col } from 'react-bootstrap'
 import { data  , PaginationData} from '../DataFake/Product1'
-import img_sale from '../images/saleproduct.png'
 import Slick from './Slick'
 import img_ship from '../images/icon-ship2.png'
+import img_sale from '../images/saleproduct.png'
 const settings = {
     infinite: true,
     slidesToShow: 2,
@@ -48,7 +48,7 @@ const settings = {
     ]
 }
 const ProductItem = () => {
-    const [Product , setProduct] = useState([])
+    const [Product1 , setProduct] = useState([])
     useEffect(() => {
         const loadItem = async () => {
             const sale = data
@@ -60,7 +60,7 @@ const ProductItem = () => {
     },[])
     return(
         <Slick settings={settings}>
-        {Product.map((item , index) => (
+        {Product1.map((item , index) => (
                     <div key={index} className="position-relative sale__item">
                     <Card className="card__item position-static">
                         {item.is_sale && (

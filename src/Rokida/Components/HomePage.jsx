@@ -13,7 +13,8 @@ import '../css/Layout.less'
 import '../css/Responesive.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const Layout = () => {
+import Footer from './Footer'
+const HomePage = () => {
     return(
         <>
             <Header/>
@@ -26,7 +27,8 @@ const Layout = () => {
             <RokidaMall/>
             <Suggestion/>
             <Partner/>
+            <Footer/>
         </>
     )
 }
-export default Layout
+export default HomePage

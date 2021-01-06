@@ -1,4 +1,4 @@
-export const TimeSale = 'December 30, 2020 20:00:00'
+export const TimeSale = 'January 15, 2021 20:00:00'
 let interval
 export const StartTime = (h , m , s , d , timeSale) => {
     const countDownDate = new Date(timeSale).getTime();
